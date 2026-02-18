@@ -1,7 +1,9 @@
 # Hospital Readmission Analysis Dashboard
 
-![Dashboard Preview](insert image)
+![Dashboard Preview](TableauScreenshot.png)
 *Interactive Tableau dashboard analyzing 30-day hospital readmission patterns across 10,000 patients*
+
+Visit my [Public Tableau Dashboard](https://public.tableau.com/views/Task1_17713816951640/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Project Overview
 
@@ -62,9 +64,9 @@ This business intelligence project addresses a critical healthcare challenge: re
 ## Dashboard Components
 
 ### Key Performance Indicators (KPIs)
-1. **Overall Readmission Rate:** x
+1. **Overall Readmission Rate:** 36.7%
 2. **Total Patients Analyzed:** 10,000
-3. **Average Length of Stay:** y
+3. **Average Length of Stay:** 34.5
 
 ### Visualizations
 
@@ -174,7 +176,7 @@ This business intelligence project addresses a critical healthcare challenge: re
 
 ---
 
-## 🚀 How to Use This Dashboard
+## How to Use This Dashboard
 
 ### Prerequisites
 - Tableau Desktop (2021.1 or later) or Tableau Reader (free)
