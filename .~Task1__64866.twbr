@@ -1,0 +1,3062 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Medical Readmission Data' inline='true' name='federated.1pkov881folrsd1d8afyi1lmgx8g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Medical Readmission Data' name='textscan.1gi2lic1637poy15fbh5p10lgvsc'>
+            <connection class='textscan' directory='/Users/mikaylawalker/Dropbox/Mac/Downloads' filename='Medical Readmission Data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1gi2lic1637poy15fbh5p10lgvsc' name='Medical Readmission Data.csv' table='[Medical Readmission Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CaseOrder' ordinal='0' />
+            <column datatype='string' name='Customer_id' ordinal='1' />
+            <column datatype='string' name='Interaction' ordinal='2' />
+            <column datatype='string' name='UID' ordinal='3' />
+            <column datatype='string' name='City' ordinal='4' />
+            <column datatype='string' name='State' ordinal='5' />
+            <column datatype='string' name='County' ordinal='6' />
+            <column datatype='integer' name='Zip' ordinal='7' />
+            <column datatype='real' name='Lat' ordinal='8' />
+            <column datatype='real' name='Lng' ordinal='9' />
+            <column datatype='integer' name='Population' ordinal='10' />
+            <column datatype='string' name='Area' ordinal='11' />
+            <column datatype='string' name='TimeZone' ordinal='12' />
+            <column datatype='string' name='Job' ordinal='13' />
+            <column datatype='integer' name='Children' ordinal='14' />
+            <column datatype='integer' name='Age' ordinal='15' />
+            <column datatype='real' name='Income' ordinal='16' />
+            <column datatype='string' name='Marital' ordinal='17' />
+            <column datatype='string' name='Gender' ordinal='18' />
+            <column datatype='string' name='ReAdmis' ordinal='19' />
+            <column datatype='real' name='VitD_levels' ordinal='20' />
+            <column datatype='integer' name='Doc_visits' ordinal='21' />
+            <column datatype='integer' name='Full_meals_eaten' ordinal='22' />
+            <column datatype='integer' name='vitD_supp' ordinal='23' />
+            <column datatype='string' name='Initial_admin' ordinal='24' />
+            <column datatype='string' name='Services' ordinal='25' />
+            <column datatype='real' name='Initial_days' ordinal='26' />
+            <column datatype='real' name='TotalCharge' ordinal='27' />
+            <column datatype='real' name='Additional_charges' ordinal='28' />
+            <column datatype='string' name='Soft_drink' ordinal='29' />
+            <column datatype='string' name='HighBlood' ordinal='30' />
+            <column datatype='string' name='Stroke' ordinal='31' />
+            <column datatype='string' name='Complication_risk' ordinal='32' />
+            <column datatype='string' name='Overweight' ordinal='33' />
+            <column datatype='string' name='Arthritis' ordinal='34' />
+            <column datatype='string' name='Diabetes' ordinal='35' />
+            <column datatype='string' name='Hyperlipidemia' ordinal='36' />
+            <column datatype='string' name='BackPain' ordinal='37' />
+            <column datatype='string' name='Anxiety' ordinal='38' />
+            <column datatype='string' name='Allergic_rhinitis' ordinal='39' />
+            <column datatype='string' name='Reflux_esophagitis' ordinal='40' />
+            <column datatype='string' name='Asthma' ordinal='41' />
+            <column datatype='integer' name='Item1' ordinal='42' />
+            <column datatype='integer' name='Item2' ordinal='43' />
+            <column datatype='integer' name='Item3' ordinal='44' />
+            <column datatype='integer' name='Item4' ordinal='45' />
+            <column datatype='integer' name='Item5' ordinal='46' />
+            <column datatype='integer' name='Item6' ordinal='47' />
+            <column datatype='integer' name='Item7' ordinal='48' />
+            <column datatype='integer' name='Item8' ordinal='49' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaseOrder</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CaseOrder]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>CaseOrder</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_id]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interaction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Interaction]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Interaction</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UID]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>UID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lng]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Lng</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TimeZone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TimeZone]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>TimeZone</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Job</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Children]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Children</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Marital</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ReAdmis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ReAdmis]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>ReAdmis</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VitD_levels</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VitD_levels]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>VitD_levels</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Doc_visits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Doc_visits]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Doc_visits</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full_meals_eaten</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Full_meals_eaten]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Full_meals_eaten</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vitD_supp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vitD_supp]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>vitD_supp</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial_admin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Initial_admin]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Initial_admin</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Services</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Services]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Services</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Initial_days]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Initial_days</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCharge</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCharge]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>TotalCharge</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Additional_charges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Additional_charges]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Additional_charges</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Soft_drink</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Soft_drink]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Soft_drink</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HighBlood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HighBlood]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>HighBlood</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stroke</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stroke]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Stroke</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Complication_risk</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Complication_risk]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Complication_risk</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overweight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Overweight]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Overweight</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arthritis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Arthritis]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Arthritis</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Diabetes]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Diabetes</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hyperlipidemia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hyperlipidemia]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Hyperlipidemia</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BackPain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BackPain]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>BackPain</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Anxiety</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Anxiety]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Anxiety</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Allergic_rhinitis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Allergic_rhinitis]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Allergic_rhinitis</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reflux_esophagitis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Reflux_esophagitis]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Reflux_esophagitis</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asthma</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Asthma]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Asthma</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item1]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Item1</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item2]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Item2</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item3]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Item3</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item4]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Item4</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item5]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Item5</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item6]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Item6</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item7]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Item7</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item8]</local-name>
+            <parent-name>[Medical Readmission Data.csv]</parent-name>
+            <remote-alias>Item8</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Additional charges' datatype='real' name='[Additional_charges]' role='measure' type='quantitative' />
+      <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+      <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+      <column caption='Readmission Count' datatype='integer' name='[Calculation_2865837476839489537]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [ReAdmis] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Readmission Rate' datatype='real' name='[Calculation_2865837476839718914]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_2865837476839489537]) / COUNT([Customer_id])' />
+      </column>
+      <column caption='Age Group' datatype='string' name='[Calculation_2865837542711431168]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Age] &lt; 18 THEN &quot;Under 18&quot;&#10;ELSEIF [Age] &lt; 36 THEN &quot;18-35&quot;&#10;ELSEIF [Age] &lt; 51 THEN &quot;36-50&quot;&#10;ELSEIF [Age] &lt; 66 THEN &quot;51-65&quot;&#10;ELSE &quot;66+&quot;&#10;END' />
+      </column>
+      <column caption='Total Patients' datatype='integer' name='[Calculation_4219028493239083011]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Customer_id])' />
+      </column>
+      <column caption='Total Conditions' datatype='integer' name='[Calculation_915989945088323584]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(IF [Diabetes]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [HighBlood]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Stroke]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Arthritis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Asthma]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Hyperlipidemia]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [BackPain]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Anxiety]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Allergic_rhinitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Reflux_esophagitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Overweight]=&quot;Yes&quot; THEN 1 ELSE 0 END)' />
+      </column>
+      <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+      </column>
+      <column caption='Case Order' datatype='integer' name='[CaseOrder]' role='measure' type='quantitative' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Complication risk' datatype='string' name='[Complication_risk]' role='dimension' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+      <column caption='Doc visits' datatype='integer' name='[Doc_visits]' role='measure' type='quantitative' />
+      <column caption='Full meals eaten' datatype='integer' name='[Full_meals_eaten]' role='measure' type='quantitative' />
+      <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+      <column caption='Initial admin' datatype='string' name='[Initial_admin]' role='dimension' type='nominal' />
+      <column caption='Initial days' datatype='real' name='[Initial_days]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+      <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Services]' role='dimension' type='nominal' />
+      <column caption='Soft drink' datatype='string' name='[Soft_drink]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Time Zone' datatype='string' name='[TimeZone]' role='dimension' type='nominal' />
+      <column caption='Total Charge' datatype='real' name='[TotalCharge]' role='measure' type='quantitative' />
+      <column caption='VitD levels' datatype='real' name='[VitD_levels]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Medical Readmission Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]' role='measure' type='quantitative' />
+      <column caption='vitD supp' datatype='integer' name='[vitD_supp]' role='measure' type='quantitative' />
+      <column-instance column='[Customer_id]' derivation='CountD' name='[ctd:Customer_id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Complication_risk]' derivation='None' name='[none:Complication_risk:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Services]' derivation='None' name='[none:Services:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_2865837476839718914]' derivation='User' name='[usr:Calculation_2865837476839718914:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_1ie5k7w1op06p2186zotq11883eo.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/20/2025 10:53:41 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CaseOrder</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CaseOrder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CaseOrder</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Interaction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Interaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Interaction</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[UID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3289</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1423</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5077</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lat</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5077</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lng</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lng]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lng</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5189</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3431</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TimeZone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TimeZone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TimeZone</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>991</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Children</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Children]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Children</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ReAdmis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ReAdmis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ReAdmis</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VitD_levels</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[VitD_levels]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VitD_levels</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Doc_visits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Doc_visits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Doc_visits</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Full_meals_eaten</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Full_meals_eaten]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Full_meals_eaten</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vitD_supp</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vitD_supp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vitD_supp</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Initial_admin</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Initial_admin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Initial_admin</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Services</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Services]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Services</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Initial_days</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Initial_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Initial_days</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalCharge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalCharge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalCharge</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Additional_charges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Additional_charges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Additional_charges</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8005</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Soft_drink</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Soft_drink]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Soft_drink</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HighBlood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HighBlood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HighBlood</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stroke</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Stroke]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stroke</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Complication_risk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Complication_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Complication_risk</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Overweight</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Overweight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Overweight</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arthritis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Arthritis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arthritis</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diabetes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Diabetes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diabetes</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hyperlipidemia</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hyperlipidemia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hyperlipidemia</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BackPain</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BackPain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BackPain</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Anxiety</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Anxiety]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Anxiety</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Allergic_rhinitis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Allergic_rhinitis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Allergic_rhinitis</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reflux_esophagitis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reflux_esophagitis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reflux_esophagitis</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Asthma</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Asthma]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Asthma</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item1</remote-alias>
+              <ordinal>42</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item2</remote-alias>
+              <ordinal>43</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item3</remote-alias>
+              <ordinal>44</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item4</remote-alias>
+              <ordinal>45</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item5</remote-alias>
+              <ordinal>46</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item6</remote-alias>
+              <ordinal>47</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item7</remote-alias>
+              <ordinal>48</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item8</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item8]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item8</remote-alias>
+              <ordinal>49</ordinal>
+              <family>Medical Readmission Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Services:nk]' palette='tableau10_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;CT Scan&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Intravenous&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Blood Work&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MRI&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1pkov881folrsd1d8afyi1lmgx8g]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Complication_risk:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='CaseOrder' />
+        <field-sort-custom-order field='Customer_id' />
+        <field-sort-custom-order field='Calculation_4219028493239083011' />
+        <field-sort-custom-order field='Interaction' />
+        <field-sort-custom-order field='UID' />
+        <field-sort-custom-order field='City' />
+        <field-sort-custom-order field='State' />
+        <field-sort-custom-order field='County' />
+        <field-sort-custom-order field='Zip' />
+        <field-sort-custom-order field='Lat' />
+        <field-sort-custom-order field='Lng' />
+        <field-sort-custom-order field='Population' />
+        <field-sort-custom-order field='Area' />
+        <field-sort-custom-order field='TimeZone' />
+        <field-sort-custom-order field='Job' />
+        <field-sort-custom-order field='Children' />
+        <field-sort-custom-order field='Age' />
+        <field-sort-custom-order field='Calculation_2865837542711431168' />
+        <field-sort-custom-order field='Income' />
+        <field-sort-custom-order field='Marital' />
+        <field-sort-custom-order field='Gender' />
+        <field-sort-custom-order field='ReAdmis' />
+        <field-sort-custom-order field='Calculation_4219028492161544193' />
+        <field-sort-custom-order field='Calculation_4219028493232160770' />
+        <field-sort-custom-order field='VitD_levels' />
+        <field-sort-custom-order field='Doc_visits' />
+        <field-sort-custom-order field='Full_meals_eaten' />
+        <field-sort-custom-order field='vitD_supp' />
+        <field-sort-custom-order field='Initial_admin' />
+        <field-sort-custom-order field='Services' />
+        <field-sort-custom-order field='Initial_days' />
+        <field-sort-custom-order field='TotalCharge' />
+        <field-sort-custom-order field='Additional_charges' />
+        <field-sort-custom-order field='Soft_drink' />
+        <field-sort-custom-order field='HighBlood' />
+        <field-sort-custom-order field='Stroke' />
+        <field-sort-custom-order field='Complication_risk' />
+        <field-sort-custom-order field='Overweight' />
+        <field-sort-custom-order field='Calculation_2865837476839489537' />
+        <field-sort-custom-order field='Arthritis' />
+        <field-sort-custom-order field='Calculation_915989945088323584' />
+        <field-sort-custom-order field='Diabetes' />
+        <field-sort-custom-order field='Calculation_915989945088450561' />
+        <field-sort-custom-order field='Hyperlipidemia' />
+        <field-sort-custom-order field='BackPain' />
+        <field-sort-custom-order field='Anxiety' />
+        <field-sort-custom-order field='Allergic_rhinitis' />
+        <field-sort-custom-order field='Reflux_esophagitis' />
+        <field-sort-custom-order field='Asthma' />
+        <field-sort-custom-order field='Item1' />
+        <field-sort-custom-order field='Item2' />
+        <field-sort-custom-order field='Item3' />
+        <field-sort-custom-order field='Item4' />
+        <field-sort-custom-order field='Item5' />
+        <field-sort-custom-order field='Item6' />
+        <field-sort-custom-order field='Calculation_2865837476839718914' />
+        <field-sort-custom-order field='Item7' />
+        <field-sort-custom-order field='Item8' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Medical Readmission Data.csv' id='Medical Readmission Data.csv_3D97293574C54478A6768117609CB0BA'>
+            <properties context=''>
+              <relation connection='textscan.1gi2lic1637poy15fbh5p10lgvsc' name='Medical Readmission Data.csv' table='[Medical Readmission Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CaseOrder' ordinal='0' />
+                  <column datatype='string' name='Customer_id' ordinal='1' />
+                  <column datatype='string' name='Interaction' ordinal='2' />
+                  <column datatype='string' name='UID' ordinal='3' />
+                  <column datatype='string' name='City' ordinal='4' />
+                  <column datatype='string' name='State' ordinal='5' />
+                  <column datatype='string' name='County' ordinal='6' />
+                  <column datatype='integer' name='Zip' ordinal='7' />
+                  <column datatype='real' name='Lat' ordinal='8' />
+                  <column datatype='real' name='Lng' ordinal='9' />
+                  <column datatype='integer' name='Population' ordinal='10' />
+                  <column datatype='string' name='Area' ordinal='11' />
+                  <column datatype='string' name='TimeZone' ordinal='12' />
+                  <column datatype='string' name='Job' ordinal='13' />
+                  <column datatype='integer' name='Children' ordinal='14' />
+                  <column datatype='integer' name='Age' ordinal='15' />
+                  <column datatype='real' name='Income' ordinal='16' />
+                  <column datatype='string' name='Marital' ordinal='17' />
+                  <column datatype='string' name='Gender' ordinal='18' />
+                  <column datatype='string' name='ReAdmis' ordinal='19' />
+                  <column datatype='real' name='VitD_levels' ordinal='20' />
+                  <column datatype='integer' name='Doc_visits' ordinal='21' />
+                  <column datatype='integer' name='Full_meals_eaten' ordinal='22' />
+                  <column datatype='integer' name='vitD_supp' ordinal='23' />
+                  <column datatype='string' name='Initial_admin' ordinal='24' />
+                  <column datatype='string' name='Services' ordinal='25' />
+                  <column datatype='real' name='Initial_days' ordinal='26' />
+                  <column datatype='real' name='TotalCharge' ordinal='27' />
+                  <column datatype='real' name='Additional_charges' ordinal='28' />
+                  <column datatype='string' name='Soft_drink' ordinal='29' />
+                  <column datatype='string' name='HighBlood' ordinal='30' />
+                  <column datatype='string' name='Stroke' ordinal='31' />
+                  <column datatype='string' name='Complication_risk' ordinal='32' />
+                  <column datatype='string' name='Overweight' ordinal='33' />
+                  <column datatype='string' name='Arthritis' ordinal='34' />
+                  <column datatype='string' name='Diabetes' ordinal='35' />
+                  <column datatype='string' name='Hyperlipidemia' ordinal='36' />
+                  <column datatype='string' name='BackPain' ordinal='37' />
+                  <column datatype='string' name='Anxiety' ordinal='38' />
+                  <column datatype='string' name='Allergic_rhinitis' ordinal='39' />
+                  <column datatype='string' name='Reflux_esophagitis' ordinal='40' />
+                  <column datatype='string' name='Asthma' ordinal='41' />
+                  <column datatype='integer' name='Item1' ordinal='42' />
+                  <column datatype='integer' name='Item2' ordinal='43' />
+                  <column datatype='integer' name='Item3' ordinal='44' />
+                  <column datatype='integer' name='Item4' ordinal='45' />
+                  <column datatype='integer' name='Item5' ordinal='46' />
+                  <column datatype='integer' name='Item6' ordinal='47' />
+                  <column datatype='integer' name='Item7' ordinal='48' />
+                  <column datatype='integer' name='Item8' ordinal='49' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+      <datasources>
+        <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+        <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+        </column>
+        <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Calculation_915989945088450561:nk]' member='&quot;0 Conditions&quot;' />
+          <groupfilter function='member' level='[none:Calculation_915989945088450561:nk]' member='&quot;1 Condition&quot;' />
+          <groupfilter function='member' level='[none:Calculation_915989945088450561:nk]' member='&quot;2 Conditions&quot;' />
+          <groupfilter function='member' level='[none:Calculation_915989945088450561:nk]' member='&quot;3-4 Conditions&quot;' />
+          <groupfilter function='member' level='[none:Calculation_915989945088450561:nk]' member='&quot;5+ Conditions&quot;' />
+        </groupfilter>
+        <target field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action2_0FD5754C9218495ABC153EB694CCA966]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Complication risk' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2_9133EEC82E364BD7AAA7DC3329BEB390]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Age Groups' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Complication risk' />
+        <param name='target' value='Age Groups' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Age Groups'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Anxiety]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Arthritis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Asthma]' role='dimension' type='nominal' />
+            <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+            <column caption='Readmission Count' datatype='integer' name='[Calculation_2865837476839489537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [ReAdmis] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Readmission Rate' datatype='real' name='[Calculation_2865837476839718914]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_2865837476839489537]) / COUNT([Customer_id])' />
+            </column>
+            <column caption='Age Group' datatype='string' name='[Calculation_2865837542711431168]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &lt; 18 THEN &quot;Under 18&quot;&#10;ELSEIF [Age] &lt; 36 THEN &quot;18-35&quot;&#10;ELSEIF [Age] &lt; 51 THEN &quot;36-50&quot;&#10;ELSEIF [Age] &lt; 66 THEN &quot;51-65&quot;&#10;ELSE &quot;66+&quot;&#10;END' />
+            </column>
+            <column caption='Total Conditions' datatype='integer' name='[Calculation_915989945088323584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(IF [Diabetes]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [HighBlood]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Stroke]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Arthritis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Asthma]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Hyperlipidemia]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [BackPain]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Anxiety]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Allergic_rhinitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Reflux_esophagitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Overweight]=&quot;Yes&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+            </column>
+            <column caption='Complication risk' datatype='string' name='[Complication_risk]' role='dimension' type='nominal' />
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hyperlipidemia]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overweight]' role='dimension' type='nominal' />
+            <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+            <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Stroke]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2865837542711431168]' derivation='None' name='[none:Calculation_2865837542711431168:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Complication_risk]' derivation='None' name='[none:Complication_risk:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2865837476839718914]' derivation='User' name='[usr:Calculation_2865837476839718914:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_2865837542711431168:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Complication_risk:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Complication_risk:nk]' member='&quot;High&quot;' />
+              <groupfilter function='member' level='[none:Complication_risk:nk]' member='&quot;Low&quot;' />
+              <groupfilter function='member' level='[none:Complication_risk:nk]' member='&quot;Medium&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Complication_risk:nk]</column>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Complication_risk:nk]' />
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Age Group:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_2865837542711431168:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Complication risk:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Complication_risk:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Readmission Rate:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_2865837542711431168:nk] / [federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Complication_risk:nk])</rows>
+        <cols>[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]</cols>
+      </table>
+      <simple-id uuid='{4AACCA2A-2F66-4693-8D69-9D4A7F4EE1CE}' />
+    </worksheet>
+    <worksheet name='Chronic Conditions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Readmission Rate by Number of Chronic Conditions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+            <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Anxiety]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Arthritis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Asthma]' role='dimension' type='nominal' />
+            <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+            <column caption='Readmission Count' datatype='integer' name='[Calculation_2865837476839489537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [ReAdmis] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Readmission Rate' datatype='real' name='[Calculation_2865837476839718914]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_2865837476839489537]) / COUNT([Customer_id])' />
+            </column>
+            <column caption='Total Conditions' datatype='integer' name='[Calculation_915989945088323584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(IF [Diabetes]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [HighBlood]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Stroke]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Arthritis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Asthma]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Hyperlipidemia]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [BackPain]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Anxiety]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Allergic_rhinitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Reflux_esophagitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Overweight]=&quot;Yes&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+            </column>
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hyperlipidemia]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overweight]' role='dimension' type='nominal' />
+            <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+            <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Stroke]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_id]' derivation='CountD' name='[ctd:Customer_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2865837476839718914]' derivation='User' name='[usr:Calculation_2865837476839718914:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]' direction='DESC' using='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' />
+          <filter class='categorical' column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]</column>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]' value='Filter by Complication Risk'>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>Filter by Complication Risk</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' />
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' />
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]</run>
+                <run>&gt;  &lt;</run>
+                <run>[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]</rows>
+        <cols>[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]</cols>
+      </table>
+      <simple-id uuid='{BBB5C63D-D5A6-45C2-AED1-57DC75A90AA0}' />
+    </worksheet>
+    <worksheet name='KPI -  AVG Stay'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+            <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Anxiety]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Arthritis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Asthma]' role='dimension' type='nominal' />
+            <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+            <column caption='Total Conditions' datatype='integer' name='[Calculation_915989945088323584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(IF [Diabetes]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [HighBlood]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Stroke]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Arthritis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Asthma]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Hyperlipidemia]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [BackPain]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Anxiety]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Allergic_rhinitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Reflux_esophagitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Overweight]=&quot;Yes&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+            </column>
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hyperlipidemia]' role='dimension' type='nominal' />
+            <column caption='Initial days' datatype='real' name='[Initial_days]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Overweight]' role='dimension' type='nominal' />
+            <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Stroke]' role='dimension' type='nominal' />
+            <column-instance column='[Initial_days]' derivation='Avg' name='[avg:Initial_days:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]</column>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[avg:Initial_days:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='height' value='146' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[avg:Initial_days:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Benton Sans Book' fontsize='16'>Average Initial Stay (Days)</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='22'><![CDATA[<[federated.1pkov881folrsd1d8afyi1lmgx8g].[avg:Initial_days:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9CF08B91-A4B7-4B02-90F8-5C7B4C1EE421}' />
+    </worksheet>
+    <worksheet name='KPI - AVG Charge'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+            <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Anxiety]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Arthritis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Asthma]' role='dimension' type='nominal' />
+            <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+            <column caption='Total Conditions' datatype='integer' name='[Calculation_915989945088323584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(IF [Diabetes]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [HighBlood]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Stroke]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Arthritis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Asthma]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Hyperlipidemia]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [BackPain]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Anxiety]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Allergic_rhinitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Reflux_esophagitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Overweight]=&quot;Yes&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+            </column>
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hyperlipidemia]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overweight]' role='dimension' type='nominal' />
+            <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Stroke]' role='dimension' type='nominal' />
+            <column caption='Total Charge' datatype='real' name='[TotalCharge]' role='measure' type='quantitative' />
+            <column-instance column='[TotalCharge]' derivation='Avg' name='[avg:TotalCharge:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]</column>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[avg:TotalCharge:qk]' value='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[avg:TotalCharge:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Benton Sans Book' fontsize='22'>Average Daily Charge </run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='36'><![CDATA[<[federated.1pkov881folrsd1d8afyi1lmgx8g].[avg:TotalCharge:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5D574AE1-CEE4-4185-BCAA-F9E981D3E8A7}' />
+    </worksheet>
+    <worksheet name='KPI - Readmission Rate '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+            <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Anxiety]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Arthritis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Asthma]' role='dimension' type='nominal' />
+            <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+            <column caption='Readmission Count' datatype='integer' name='[Calculation_2865837476839489537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [ReAdmis] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Readmission Rate' datatype='real' name='[Calculation_2865837476839718914]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_2865837476839489537]) / COUNT([Customer_id])' />
+            </column>
+            <column caption='Total Conditions' datatype='integer' name='[Calculation_915989945088323584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(IF [Diabetes]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [HighBlood]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Stroke]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Arthritis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Asthma]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Hyperlipidemia]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [BackPain]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Anxiety]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Allergic_rhinitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Reflux_esophagitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Overweight]=&quot;Yes&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+            </column>
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hyperlipidemia]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overweight]' role='dimension' type='nominal' />
+            <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+            <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Stroke]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2865837476839718914]' derivation='User' name='[usr:Calculation_2865837476839718914:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]</column>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Benton Sans Book' fontsize='16'>Overall Readmission Rate</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='26'><![CDATA[<[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B5A20B81-0944-48F3-9944-1765C476DB28}' />
+    </worksheet>
+    <worksheet name='KPI - Total Patients'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+            <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Anxiety]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Arthritis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Asthma]' role='dimension' type='nominal' />
+            <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+            <column caption='Total Conditions' datatype='integer' name='[Calculation_915989945088323584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(IF [Diabetes]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [HighBlood]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Stroke]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Arthritis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Asthma]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Hyperlipidemia]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [BackPain]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Anxiety]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Allergic_rhinitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Reflux_esophagitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Overweight]=&quot;Yes&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+            </column>
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hyperlipidemia]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overweight]' role='dimension' type='nominal' />
+            <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Stroke]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_id]' derivation='CountD' name='[ctd:Customer_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]</column>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Benton Sans Book' fontsize='16'>Total Patients Analyzed</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='22'><![CDATA[<[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{699AB76D-56A3-444A-AAC9-52C5C3A3B702}' />
+    </worksheet>
+    <worksheet name='Readmissions by State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+            <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Anxiety]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Arthritis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Asthma]' role='dimension' type='nominal' />
+            <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+            <column caption='Readmission Count' datatype='integer' name='[Calculation_2865837476839489537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [ReAdmis] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Readmission Rate' datatype='real' name='[Calculation_2865837476839718914]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_2865837476839489537]) / COUNT([Customer_id])' />
+            </column>
+            <column caption='Total Conditions' datatype='integer' name='[Calculation_915989945088323584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(IF [Diabetes]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [HighBlood]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Stroke]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Arthritis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Asthma]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Hyperlipidemia]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [BackPain]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Anxiety]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Allergic_rhinitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Reflux_esophagitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Overweight]=&quot;Yes&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+            </column>
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hyperlipidemia]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overweight]' role='dimension' type='nominal' />
+            <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+            <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Stroke]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_id]' derivation='Attribute' name='[attr:Customer_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_id]' derivation='CountD' name='[ctd:Customer_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2865837476839718914]' derivation='User' name='[usr:Calculation_2865837476839718914:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]</column>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[Longitude (generated)]' field-type='quantitative' max='35454481.971499532' min='14079279.491044044' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[Latitude (generated)]' field-type='quantitative' max='10336995.230220739' min='3066814.4846529523' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' />
+              <tooltip column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[attr:Customer_id:nk]' />
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' />
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' />
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]' />
+              <lod column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' />
+              <geometry column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'><![CDATA[State: <[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]> ]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Benton Sans Book'><![CDATA[Readmission Rate: <[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]> ]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Benton Sans Book'><![CDATA[Total Patients: <[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pkov881folrsd1d8afyi1lmgx8g].[Latitude (generated)]</rows>
+        <cols>[federated.1pkov881folrsd1d8afyi1lmgx8g].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{51566B03-1F74-48B7-9AF0-6F3DF81C1ED5}' />
+    </worksheet>
+    <worksheet name='Service Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Readmission Rates by Primary Service Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+            <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Anxiety]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Arthritis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Asthma]' role='dimension' type='nominal' />
+            <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+            <column caption='Readmission Count' datatype='integer' name='[Calculation_2865837476839489537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [ReAdmis] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Readmission Rate' datatype='real' name='[Calculation_2865837476839718914]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_2865837476839489537]) / COUNT([Customer_id])' />
+            </column>
+            <column caption='Total Conditions' datatype='integer' name='[Calculation_915989945088323584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(IF [Diabetes]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [HighBlood]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Stroke]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Arthritis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Asthma]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Hyperlipidemia]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [BackPain]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Anxiety]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Allergic_rhinitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Reflux_esophagitis]=&quot;Yes&quot; THEN 1 ELSE 0 END) +&#10;(IF [Overweight]=&quot;Yes&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+            </column>
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hyperlipidemia]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overweight]' role='dimension' type='nominal' />
+            <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+            <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Services]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Stroke]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_id]' derivation='CountD' name='[ctd:Customer_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Services]' derivation='None' name='[none:Services:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2865837476839718914]' derivation='User' name='[usr:Calculation_2865837476839718914:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Services:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Services:nk]' />
+              <color column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Services:nk]' />
+              <color column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[:Measure Names]' />
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Services:nk]' />
+              <color column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[:Measure Names]' />
+              <text column='[federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Services:nk]</rows>
+        <cols>([federated.1pkov881folrsd1d8afyi1lmgx8g].[ctd:Customer_id:qk] + [federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk])</cols>
+      </table>
+      <simple-id uuid='{44E0CE71-2CD6-4C76-A341-1BB80340ABA4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Hospital Readmission Executive Overview</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Medical Readmission Data' name='federated.1pkov881folrsd1d8afyi1lmgx8g' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1pkov881folrsd1d8afyi1lmgx8g'>
+        <column caption='Condition Category' datatype='string' name='[Calculation_915989945088450561]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [Calculation_915989945088323584] = 0 THEN &quot;0 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] = 1 THEN &quot;1 Condition&quot;&#10;ELSEIF [Calculation_915989945088323584] = 2 THEN &quot;2 Conditions&quot;&#10;ELSEIF [Calculation_915989945088323584] &lt;= 4 THEN &quot;3-4 Conditions&quot;&#10;ELSE &quot;5+ Conditions&quot;&#10;END' />
+        </column>
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[Calculation_915989945088450561]' derivation='None' name='[none:Calculation_915989945088450561:nk]' pivot='key' type='nominal' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98720' id='17' param='horz' type-v2='layout-flow' w='99504' x='248' y='640'>
+            <zone fixed-size='1253' h='98720' id='15' is-fixed='true' type-v2='layout-basic' w='38805' x='248' y='640'>
+              <zone h='22191' id='7' param='vert' type-v2='layout-flow' w='38805' x='248' y='640'>
+                <zone fixed-size='24' h='2560' id='9' is-fixed='true' type-v2='title' w='38805' x='248' y='640'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='19631' id='8' type-v2='layout-basic' w='38805' x='248' y='3200'>
+                  <zone h='19631' id='10' name='KPI - Readmission Rate ' show-title='false' w='12933' x='248' y='3200'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='19631' id='11' name='KPI - Total Patients' show-title='false' w='12937' x='26116' y='3200'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='19631' id='24' name='KPI -  AVG Stay' show-title='false' w='12935' x='13181' y='3200'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='44056' id='14' name='Readmissions by State' w='19406' x='19647' y='22831'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32473' id='19' name='Chronic Conditions' w='19399' x='248' y='66887'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32473' id='20' name='Service Type' w='19406' x='19647' y='66887'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44056' id='22' name='Age Groups' w='19399' x='248' y='22831'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='450' h='98720' id='16' is-fixed='true' param='vert' type-v2='layout-flow' w='13936' x='39053' y='640'>
+              <zone h='5200' id='18' name='Readmissions by State' pane-specification-id='0' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' type-v2='color' w='13936' x='39053' y='640'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4160' id='21' mode='checkdropdown' name='Readmissions by State' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' type-v2='filter' values='database' w='13936' x='39053' y='5840'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6880' id='23' name='Age Groups' pane-specification-id='4' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Complication_risk:nk]' type-v2='color' w='13936' x='39053' y='10000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11680' id='26' name='Chronic Conditions' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]' type-v2='filter' values='database' w='13936' x='39053' y='16880'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4160' id='27' name='Chronic Conditions' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]' type-v2='highlighter' w='13936' x='39053' y='28560'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='3865' id='25' type-v2='dashboard-object' w='1953' x='81367' y='11755'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{95EFB169-73E2-4862-8F67-E2D2D7D884EF}&quot; zone-id=&quot;25&quot; zone-ids=[21]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Hospital Readmission Executive Overview</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97452' id='30' param='vert' type-v2='layout-flow' w='98698' x='651' y='1274'>
+                <zone fixed-size='24' h='5096' id='9' type-v2='title' w='83971' x='651' y='1274'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='126' h='16810' id='10' is-fixed='true' name='KPI - Readmission Rate ' show-title='false' w='27991' x='651' y='6370'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='126' h='16810' id='24' is-fixed='true' name='KPI -  AVG Stay' show-title='false' w='27990' x='28642' y='6370'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='126' h='16810' id='11' is-fixed='true' name='KPI - Total Patients' show-title='false' w='27990' x='56632' y='6370'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43491' id='22' is-fixed='true' name='Age Groups' w='41984' x='651' y='23180'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13694' id='23' name='Age Groups' pane-specification-id='4' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Complication_risk:nk]' type-v2='color' w='14727' x='84622' y='19904'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8280' id='21' mode='checkdropdown' name='Readmissions by State' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:State:nk]' type-v2='filter' values='database' w='14727' x='84622' y='11624'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43491' id='14' is-fixed='true' name='Readmissions by State' w='41987' x='42635' y='23180'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10350' id='18' name='Readmissions by State' pane-specification-id='0' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' type-v2='color' w='14727' x='84622' y='1274'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='23249' id='26' mode='checkdropdown' name='Chronic Conditions' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]' type-v2='filter' values='database' w='14727' x='84622' y='33598'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8280' id='27' name='Chronic Conditions' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Calculation_915989945088450561:nk]' type-v2='highlighter' w='14727' x='84622' y='56847'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='249' h='32055' id='19' is-fixed='true' name='Chronic Conditions' w='41984' x='651' y='66671'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='249' h='32055' id='20' is-fixed='true' name='Service Type' w='41987' x='42635' y='66671'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8A94C9DE-BA07-4EA9-BEDB-6953F3A18F71}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Age Groups' />
+        <viewpoint name='Chronic Conditions' />
+        <viewpoint name='KPI -  AVG Stay'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Readmission Rate '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total Patients'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Readmissions by State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Service Type' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{95EFB169-73E2-4862-8F67-E2D2D7D884EF}' />
+    </window>
+    <window class='worksheet' name='KPI - Readmission Rate '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4BF0C5A8-B9B2-4000-8E68-8744D5010F1E}' />
+    </window>
+    <window class='worksheet' name='KPI - Total Patients'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5CCBBBD9-158D-403F-84C5-8B9B3B430B7B}' />
+    </window>
+    <window class='worksheet' name='KPI -  AVG Stay'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0DDB7B49-1912-46BF-90D3-D574CF8CAD6A}' />
+    </window>
+    <window class='worksheet' name='KPI - AVG Charge'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3653E2AB-5D25-4309-B514-447F947959A6}' />
+    </window>
+    <window class='worksheet' name='Readmissions by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F124508-B8F2-4EA0-BE75-A786F7B6AACA}' />
+    </window>
+    <window class='worksheet' name='Chronic Conditions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[usr:Calculation_2865837476839718914:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1B47C87B-1F4E-4E12-B1C4-3F886AE9A7B0}' />
+    </window>
+    <window class='worksheet' name='Service Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1pkov881folrsd1d8afyi1lmgx8g].[none:Services:nk]&#10;[federated.1pkov881folrsd1d8afyi1lmgx8g].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F1793EF0-D4D5-4267-8B64-3F712D289834}' />
+    </window>
+    <window class='worksheet' name='Age Groups'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D1140742-724F-4024-9F16-A26525C1CBFF}' />
+    </window>
+  </windows>
+</workbook>
